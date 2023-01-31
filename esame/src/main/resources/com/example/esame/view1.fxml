@@ -30,7 +30,9 @@
          </font>
       </Text>
       <Button fx:id="action11" layoutX="126.0" layoutY="302.0" mnemonicParsing="false" onAction="#differenza" prefHeight="38.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="-" />
-      <Button fx:id="action111" layoutX="223.0" layoutY="306.0" mnemonicParsing="false" onAction="#logaritmo" prefHeight="38.0" prefWidth="74.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="log10(A)" />
-      <Button fx:id="action1111" layoutX="316.0" layoutY="306.0" mnemonicParsing="false" onAction="#radice" prefHeight="38.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="sqrt(A)" />
+      <Button fx:id="action111" layoutX="223.0" layoutY="306.0" mnemonicParsing="false" onAction="#logaritmoA" prefHeight="38.0" prefWidth="74.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="log10(A)" />
+      <Button fx:id="action1111" layoutX="316.0" layoutY="306.0" mnemonicParsing="false" onAction="#radiceA" prefHeight="38.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="sqrt(A)" />
+      <Button fx:id="action1112" layoutX="414.0" layoutY="247.0" mnemonicParsing="false" onAction="#logaritmoB" prefHeight="38.0" prefWidth="74.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="log10(B)" />
+      <Button fx:id="action11111" layoutX="417.0" layoutY="306.0" mnemonicParsing="false" onAction="#radiceB" prefHeight="38.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3;" text="sqrt(B)" />
    </children>
 </AnchorPane>

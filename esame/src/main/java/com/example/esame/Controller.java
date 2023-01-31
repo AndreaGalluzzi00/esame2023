@@ -51,7 +51,7 @@ public class Controller {
     }
 
     @FXML
-    private void radice(ActionEvent ae){
+    private void radiceA(ActionEvent ae){
         Double a = Double.parseDouble(textFieldA.getText());
         if (a < 0) {
             textFieldResult.setText("ERROR");
@@ -61,10 +61,28 @@ public class Controller {
         }
     }
     @FXML
-    private void logaritmo(ActionEvent ae){
+    private void logaritmoA(ActionEvent ae){
         Double a = Double.parseDouble(textFieldA.getText());
         Double logaritmo = Math.log10(a);
         textFieldResult.setText(String.valueOf(logaritmo));
     }
+
+    @FXML
+    private void radiceB(ActionEvent ae){
+        Double b = Double.parseDouble(textFieldB.getText());
+        if (b < 0) {
+            textFieldResult.setText("ERROR");
+        } else {
+            Double radice = Math.sqrt(b);
+            textFieldResult.setText(String.valueOf(radice));
+        }
+    }
+    @FXML
+    private void logaritmoB(ActionEvent ae){
+        Double b = Double.parseDouble(textFieldB.getText());
+        Double logaritmo = Math.log10(b);
+        textFieldResult.setText(String.valueOf(logaritmo));
+    }
+
 
 }
