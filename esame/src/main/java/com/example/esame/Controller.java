@@ -13,6 +13,8 @@ public class Controller {
     @FXML
     private TextField textFieldResult;
 
+    private static final String ERROR = "ERROR";
+
 
     @FXML
     private void somma(ActionEvent ae){
@@ -43,7 +45,7 @@ public class Controller {
         Double a = Double.parseDouble(textFieldA.getText());
         Double b = Double.parseDouble(textFieldB.getText());
         if (b == 0) {
-            textFieldResult.setText("ERROR");
+            textFieldResult.setText(ERROR);
         } else {
             Double divisione = a / b;
             textFieldResult.setText(String.valueOf(divisione));
@@ -54,7 +56,7 @@ public class Controller {
     private void radiceA(ActionEvent ae){
         Double a = Double.parseDouble(textFieldA.getText());
         if (a < 0) {
-            textFieldResult.setText("ERROR");
+            textFieldResult.setText(ERROR);
         } else {
             Double radice = Math.sqrt(a);
             textFieldResult.setText(String.valueOf(radice));
@@ -71,7 +73,7 @@ public class Controller {
     private void radiceB(ActionEvent ae){
         Double b = Double.parseDouble(textFieldB.getText());
         if (b < 0) {
-            textFieldResult.setText("ERROR");
+            textFieldResult.setText(ERROR);
         } else {
             Double radice = Math.sqrt(b);
             textFieldResult.setText(String.valueOf(radice));
